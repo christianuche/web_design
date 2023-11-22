@@ -418,3 +418,117 @@ footer {
 .key-navigation ul li {
   margin-bottom: 10px;
 }
+
+
+
+/* ... (previous styles) ... */
+
+/* Add Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    display: none;
+  }
+
+  nav.active ul {
+    display: block;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  #header {
+    height: auto;
+  }
+
+  .container {
+    padding: 10px 5%;
+  }
+
+  /* Adjust styles for about section */
+  #about {
+    padding: 40px 0;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .about-col-1 img {
+    margin-bottom: 10px;
+  }
+
+  .tab-titles {
+    flex-direction: column;
+  }
+
+  .tab-links {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  /* Adjust styles for testimonial section */
+  .testimonial-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Adjust styles for images section */
+  .riv-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fast-rapids,
+  .mount {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  /* Adjust styles for footer */
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-contact,
+  .map-section {
+    width: 100%;
+  }
+
+  .logo-and-phone {
+    flex-direction: column;
+  }
+
+  /* Adjust styles for contact form */
+  .contact-container {
+    width: 100%;
+  }
+
+  /* Adjust styles for main content */
+  .main-content {
+    flex-direction: column;
+  }
+
+  .video-section {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+
+  .key-navigation {
+    margin-top: 20px;
+  }
+}
+
+/* ... (rest of your existing CSS) ... */
