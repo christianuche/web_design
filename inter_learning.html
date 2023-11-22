@@ -13,7 +13,7 @@
             <img src="images/logo.jpg" class="logo">
             <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="#about">About</a></li>
+              <li><a href="index.html">About</a></li>
               <li><a href="site-plan.html">Site Plan</a></li>
               <li><a href="expert_insight.html">Insight</a></li>
               <li><a href="inter_learning.html">Learnings</a></li>
@@ -21,6 +21,34 @@
             </ul>
         </nav>
     </div>
+</div>
+
+<div class="main-content">
+  <!-- Video Section -->
+  <div class="video-section">
+    <!-- Placeholder video, replace the source with your actual video -->
+    <video width="400" height="300" controls>
+      <source src="videos/video (1080p).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Key Navigation -->
+    <div class="key-navigation">
+      <h3>Key Navigation</h3>
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <!-- Add more links as needed -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- Map Section -->
+  <div class="map-section">
+    <!-- Placeholder map, replace the source with your actual map -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.9226326428873!2d-0.1282091842970842!3d51.50778737963692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604e4f377db4f%3A0x7c16d41ec859e9c4!2sBig%20Ben!5e0!3m2!1sen!2suk!4v1577363866977!5m2!1sen!2suk" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </div>
 </div>
 <script>
   // get the feedback div element so we can do something with it.
@@ -41,10 +69,11 @@
 </script>
 </body>
 <footer>
-  <div class="contact-container">
+  <div class="footer-content">
+    <!-- Contact Form -->
+    <div class="contact-container">
       <div id="contact-form" class="contact-section">
         <h3>Contact Us</h3>
-        <!-- Add your contact form HTML code here -->
         <form action="/my-handling-form-page" method="post">
           <ul>
             <li>
@@ -65,23 +94,35 @@
           </ul>
         </form>
       </div>
-  </div>
-  <div>
-      <div class="map-section contact-section">
-        <!-- Add your map HTML code here -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.9226326428873!2d-0.1282091842970842!3d51.50778737963692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604e4f377db4f%3A0x7c16d41ec859e9c4!2sBig%20Ben!5e0!3m2!1sen!2suk!4v1577363866977!5m2!1sen!2suk" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-      </div>
-    
-      <div class="contact-info contact-section">
-        <div class="logo-and-phone">
-          <img class="logo" src="images/logo.jpg" alt="Company Logo" width="100">
-          <div class="phone-number">
-            <h3>Contact Information</h3>
-            <p>Phone: +234 816-501-6088</p>
-            <p>Email: christianuche720@gmail.com</p>
-          </div>
+    </div>
+
+    <!-- Map Section -->
+    <div class="map-section contact-section">
+      <h3>Our Location</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.9226326428873!2d-0.1282091842970842!3d51.50778737963692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604e4f377db4f%3A0x7c16d41ec859e9c4!2sBig%20Ben!5e0!3m2!1sen!2suk!4v1577363866977!5m2!1sen!2suk" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="contact-info contact-section">
+      <h3>Contact Information</h3>
+      <div class="logo-and-phone">
+        <img class="logo" src="images/logo.jpg" alt="Company Logo" width="100">
+        <div class="phone-number">
+          <p>Phone: +234 816-501-6088</p>
+          <p>Email: christianuche720@gmail.com</p>
         </div>
       </div>
-  </div>      
+    </div>
+  </div>
+  <div>
+    <!-- New Section -->
+    <div class="footer-social">
+      <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+      <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </div>
+  </div>
+  <div class="footer-divider"></div>
+  <p class="footer-bottom">© 2023 Christian Uches. All rights reserved.</p>
 </footer>
 </html>

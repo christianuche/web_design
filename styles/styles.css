@@ -126,12 +126,12 @@ nav ul li a:hover::after {
 .tab-contents ul li {
   list-style: none;
   margin: 10px 0;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .tab-contents ul li span {
   color: #aea00e;
-  font-size: 8px;
+  font-size: 12px;
 }
 
 .tab-contents {
@@ -181,184 +181,240 @@ h3 {
   margin: 10px;
 }
 
-footer {
-  background-color: #171515;
-  color: #000000;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.contact-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  margin: 20px;
-}
-
-.contact-section {
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #2a2525;
-  text-align: right;
-}
-
-#contact-form {
-  flex-basis: 300px;
-  max-width: 100%;
-}
-
-.map-section {
-  flex-grow: 1;
-  margin: 20px;
-  text-align: center;
-  justify-items: center;
-}
-
-.contact-info {
-  flex-basis: 300px;
-  max-width: 100%;
-}
-
-.logo-and-phone {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #eee2e2;
-  margin: 10px;
-}
-
-
-.phone-number {
-  flex-basis: 200px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-form li + li {
-  margin-top: 1em;
-}
-
-label {
-  display: inline-block;
-  width: 90px;
-  text-align: right;
-  color: #ccc;
-}
-
-input,
-textarea {
-  font: 1em sans-serif;
-  width: 100%;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  padding: 8px;
-  margin-top: 4px;
-}
-
-input:focus,
-textarea:focus {
-  border-color: #007BFF;
-}
-
-textarea {
-  height: 5em;
-}
-
-.button {
-  text-align: center;
-}
-
-button {
-  padding: 8px 16px;
-  font-size: 1em;
-  background-color: #007BFF;
-  color: #000000;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #93aec9;
-}
-
-
-#feedback {
-  background-color: rgb(243, 141, 8);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: .5em;
-  /* make this element invisible until we are ready for it */
-  display: none;      
-}
-.moveDown {
-  margin-top: 3em;
-}
-              
-
-h3 {
-  color: #ffff00;
-}
-
-p {
-  margin: 0;
-}
-
-.contact-info img {
-  border: solid #ffea01;
-  border-radius: 5px;
-}
-
 
 
 /* ---------------- Images------------*/
 .riv-grid {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px; /* Adjust margin as needed */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px; /* Adjust margin as needed */
 }
 
 .msg-page,
 .msg-pag {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .content,
 .contents {
-    max-width: 600px; /* Adjust the maximum width as needed */
-    padding: 20px;
+  max-width: 600px; /* Adjust the maximum width as needed */
+  padding: 20px;
 }
 
 .fast-rapids,
 .mount {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    margin-right: 20px; /* Adjust margin as needed */
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  margin-right: 20px; /* Adjust margin as needed */
 }
 
 .join {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
 /* Additional styles as needed */
+footer {
+  color: #f5f5f5;
+  text-align: center; /* Center text content in the footer */
+  margin: 5px;
+  padding: 20px;
+  background: #665f5f;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row; /* Display content in a column layout */
+  align-items: center; /* Center content horizontally */
+  justify-content: space-between;
+  
+}
+
+.footer-contact,
+.map-section {
+  width: 500px;
+  height: 400px;
+  text-align: left;
+  margin-bottom: 20px; /* Add margin between sections */
+}
+
+.footer-contact h3,
+.map-section h3 {
+  color: #ffea01;
+}
+
+.footer-contact p,
+.map-section p {
+  margin: 5px 0;
+}
+
+.footer-contact img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.map-section iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 8px;
+}
+
+.logo-and-phone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Add margin between sections */
+}
+
+.logo {
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.phone-number p {
+  margin: 5px 0;
+  color: #aaa;
+}
+
+/* Contact Form */
+.contact-container {
+  width: 40%;
+  text-align: left;
+  margin: 20px;
+}
+
+.contact-section {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#contact-form {
+  max-width: 100%;
+}
+
+.contact-section h3 {
+  color: #ffea01;
+}
+
+#contact-form ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact-form li {
+  margin-bottom: 15px;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #777;
+  border-radius: 4px;
+}
+
+#contact-form button {
+  background-color: #ffea01;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact-form button:hover {
+  background-color: #0d2a61;
+}
+
+/* Footer - New Section */
+.footer-social {
+  display: block;
+  align-items: center;
+}
+
+.footer-social a {
+  display: inline;
+  margin: 0 10px;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+  gap: 20pxs;
+}
+
+.footer-social a:hover {
+  color: #ffea01;
+}
+
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #555;
+  margin: 20px 0;
+}
+
+.footer-bottom {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+
+
+
+
+/* Main Content Styles */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.video-section {
+  flex-basis: 40%;
+  margin-right: 20px;
+}
+
+.video-section video {
+  width: 100%;
+  height: auto;
+}
+
+.key-navigation {
+  margin-top: 20px;
+}
+
+.key-navigation h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.key-navigation ul {
+  list-style: none;
+}
+
+.key-navigation ul li {
+  margin-bottom: 10px;
+}
