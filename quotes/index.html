@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qoutes</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width slides/quotes -->
+    <div class="mySlides">
+      <q>A programming language is for thinking about programs, not for expressing programs you've already thought of. It should be a pencil, not a pen.</q>
+      <p class="author">- Paul Graham</p>
+    </div>
+  
+    <div class="mySlides">
+      <q>There are only two kinds of languages: the ones people complain about and the ones nobody uses</q>
+      <p class="author">- Bjarne Stroustrup</p>
+    </div>
+  
+    <div class="mySlides">
+      <q>I never am really satisfied that I understand anything; because, understand it well as I may, my comprehension can only be an infinitesimal fraction of all I want to understand about the many connections and relations which occur to me.</q>
+      <p class="author">- Ada Lovelace</p>
+    </div>
+  
+    <!-- Next/prev buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  
+  <!-- Dots/bullets/indicators -->
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+    <script>
+        var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+</body>
+</html>
