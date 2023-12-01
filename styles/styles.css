@@ -33,7 +33,7 @@ nav {
 }
 
 .logo {
-  width: 100px;
+  width: 80px;
 }
 
 nav ul li {
@@ -44,9 +44,9 @@ nav ul li {
 
 nav ul li a {
   color: #080808;
-  text-decoration: none;
   font-size: 18px;
   position: relative;
+  text-decoration: none;
 }
 
 nav ul li a::after {
@@ -369,7 +369,7 @@ footer a:hover {
 }
 
 .divider {
-  background-color: #080808;
+  background: #080808;
   margin: 10px;
 }
 
@@ -380,14 +380,6 @@ footer a:hover {
   padding: 10px;
 }
 
-.divider p, a:hover {
-  text-decoration: underline;
-  color: #fff;
-  padding: 10px;
-  font-size: 18px;
-  }
-
-  
 /* Main Content Styles */
 .main-content {
   display: flex;
