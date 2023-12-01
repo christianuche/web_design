@@ -18,7 +18,7 @@ body {
   height: 100vh;
   background-image: url("banner.jpg");
   background-size: cover;
-  background-position: centers;
+  background-position: center; /* Corrected value */
 }
 
 .container {
@@ -40,7 +40,6 @@ nav ul li {
   display: inline-block;
   list-style: none;
   margin: 10px 20px;
-
 }
 
 nav ul li a {
@@ -120,8 +119,9 @@ nav ul li a:hover::after {
   transition: 0.5s;
 }
 
-.tab-links.active-link::after{
+.tab-links.active-link::after {
   width: 50%;
+  z-index: 1; /* Add this line */
 }
 .tab-contents ul li {
   list-style: none;
@@ -346,7 +346,7 @@ footer {
 }
 
 #contact-form button:hover {
-  background-color: #0d2a61;
+  background-color: #eaff75;
 }
 
 /* Footer - New Section */
