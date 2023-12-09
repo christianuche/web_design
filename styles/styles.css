@@ -6,6 +6,24 @@
   font-family: Edu TAS Beginner, Helvetica, sans-serif;
   box-sizing: border-box;
 }
+.learn{
+  background-color: #f5f5f5;
+  font-size: 14px;
+  width: 100px;
+  margin: 10px;
+}
+.learn a {
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 10px;
+  color: #7e0d0d;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.learn :hover {
+  background-color: #aea00e;
+  color: #fff;
+}
 
 html {
   scroll-behavior: auto;
