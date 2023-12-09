@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Edu TAS Beginner, Helvetica, sans-serif;
+  font-family: "Edu TAS Beginner", Helvetica, sans-serif;
   box-sizing: border-box;
   font-size: 25px;
 }
@@ -19,7 +19,7 @@
   font-weight: 500;
   margin: 10px;
   color: #7e0d0d;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
 }
 .learn :hover {
   background-color: #aea00e;
